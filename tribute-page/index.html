@@ -1,0 +1,191 @@
+<style>
+html {
+  /* Setting a base font size of 10px give us easier rem calculations
+     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+   */
+  font-size: 10px;
+}
+
+body {
+  /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+
+h2 {
+  font-size: 3.25rem;
+}
+a {
+  color: #477ca7;
+}
+
+a:visited {
+  color: #74638f;
+}
+
+#main {
+  margin: 30px 8px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #eee;
+}
+
+@media (max-width: 460px) {
+  #main {
+    margin: 0;
+  }
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+@media (max-width: 400px){
+  img{
+  max-width: 100%;
+  display: block;
+  height: 25vh;
+  margin: 0 auto;
+  }
+  h1{
+    font-size:2em;
+  }
+}
+
+#img-div {
+  background: white;
+  padding: 10px;
+  margin: 0;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+  text-align:start;
+}
+
+@media (max-width: 460px) {
+  #img-caption {
+    font-size: 1.4rem;
+  }
+}
+
+#headline{
+  margin: 50px 0;
+  text-align: center;
+}
+
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+li {
+  margin: 16px 0;
+}
+
+blockquote {
+  font-style: italic;
+  max-width: 545px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+}
+
+</style>
+
+<main id="main">
+  <h1 id="title">Dr. APJ Abdul Kalam</h1>
+  <p>Missel Man of India</p>
+  <figure id="img-div">
+    <img id="image" src="data:image/jpeg;base64,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" alt="If you want to shine like a sun, first burn like the sun. Dr. APJ Abdul Kalam">
+    <figcaption id="img-caption">
+      <strong>Avul Pakir Jainulabdeen Abdul Kalam</strong> was an Indian aerospace scientist who served as the <strong>11th president of India from 2002 to 2007</strong>. He was born and raised in Rameswaram, Tamil Nadu and studied physics and aerospace engineering
+    </figcaption>
+  </figure>
+  <section id="tribute-info">
+    <h3 id="headline">Here's a time line of Dr. APJ's life:</h3>
+    <ul>
+          <li>
+        <p><i><small>July 27, 2015 </i></small><big><b>Passes away in Shillong, Meghalaya</b></big> Kalam passes away aged 83, after collapsing because of a cardiac arrest while delivering a lecture at IIM Shillong</p></li>
+          <br>
+          <li>        
+        <p><i><small>2012 </i></small><big><b>Launches 'What Can I Give Movement</b></big> Kalam launches the ‘What Can I Give Movement’, a programme for the Indian youth aimed at defeating corruption</p></li>
+        <br>
+          <li>        
+        <p><i><small>2002 — 2007 </i></small><big><b>Elected as India's 11th President</b></big> Kalam is elected the 11th President of India succeeding KR Narayanan. He won the 2002 presidential election with an electoral vote of 922,884. During his five years in office, he was fondly called ‘The People’s President'</p></li>
+          <br>
+          <li>        
+        <p><i><small>1999 — 2001 </i></small><big><b>Serves as India’s Chief Scientific Adviser</b></big> Serves as Principal Scientific Advisor to the Government of India</p></li>
+          <br>
+          <li>        
+        <p><i><small>1998 </i></small><big><b>Spearheads the Pokhran mission</b></big> India conducts the Pokhran II nuclear tests with Kalam being one of the forces behind its success</p></li>
+          <br>
+          <li>        
+        <p><i><small>1997 </i></small><big><b>Honoured with the Bharat Ratna</b></big> Kalam is awarded the Bharat Ratna, India's highest civilian honour for his contribution to the scientific research and modernisation of defence technology in India.</p></li>
+          <br>
+          <li>        
+        <p><i><small>1992 — 1999 </i></small><big><b>Appointed India’s Chief Scientific Adviser</b></big> Kalam is appointed as the Chief Scientific Adviser to the Prime Minister and the Secretary of the DRDO</p></li>
+          <br>
+          <li>        
+        <p><i><small>1990 </i></small><big><b>Honoured with Padma Vibhushan</b></big> Kalam is awarded the Padma Vibhushan, India’s second highest civilian honour</p></li>
+          <br>
+          <li>        
+        <p><i><small>1990 </i></small><big><b>Honoured with Padma Vibhushan</b></big> Kalam is awarded the Padma Vibhushan, India’s second highest civilian honour</p></li>
+          <br>
+          <li>        
+        <p><i><small>1981 </i></small><big><b>Recieves the Padma Bhushan</b></big> Kalam recieves the Padma Bhushan for his contribution to the field of science and technology</p></li>
+          <br>
+          <li>        
+        <p><i><small>1980 — 1990 </i></small><big><b>Develops Prithvi and Agni missiles</b></big> As the chief of the Integrated Guided Missile Development Programme, he is credited with the development and operationalisation of Agni and Prithvi missiles.</p></li>
+          <br>
+          <li>        
+        <p><i><small>1980 </i></small><big><b>Lead's India's entry in the Space club</b></big> Kalam leads India’s efforts to enter the space club by putting the Rohini satellite in Earth's orbit with the first indigenous SLV-III</p></li>
+          <br>
+          <li>        
+        <p><i><small>1969 </i></small><big><b>Moves to ISRO</b></big> Kalam moves to the Indian Space Research Organisation (ISRO) where he helms India's first Satellite Launch Vehicle (SLV-III)</p></li>
+          <br>
+          <li>        
+        <p><i><small>1960 </i></small><big><b>Joins DRDO as scientist</b></big> Kalam completes his degree in Aeronautical Engineering from Madras Institute of Technology (MIT) and joins the Defense Research and Development Organization (DRDO) as scientist.</p></li>
+          <br>
+          <li>        
+        <p><i><small>1954 </i></small><big><b>Graduates in Physics</b></big> Kalam graduates in physics from Saint Joseph's College, Tiruchirappalli. He moves to Madras to pursue further education after graduation.</p></li>
+          <br>
+          <li>        
+        <p><i><small>1931 </i></small><big><b>Born in Rameshwaram, Tamil Nadu</b></big> Avul Pakir Jainulabdeen Abdul Kalam was born to Jainulabdeen, a boat owner, and homemaker Ashiamma. He went to Ramanathapuram Schwartz Matriculation School and worked from an early age to supplement the family income.</p></li>
+    </ul>
+    <blockquote
+      cite="">
+      <p>
+        <strong><big>"You have to dream before your dreams can come true.”</big></strong> The Man who is a big inspiration for the youngsters. I pay my tribute to India's guardian, the <strong>#MissileManofIndia</strong> and the most loved former President. 
+      </p>
+      <p><u><big><b>Dr. APJ Abdul Kalam</u></big></b></p>
+    </blockquote>
+    <h3>
+      If you have time, you should read more about this incredible human being
+      on his
+      <a
+        id="tribute-link"
+        href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam"
+        target="_blank"
+        >Wikipedia entry</a
+      >.
+    </h3>
+  </section>
+</main>
